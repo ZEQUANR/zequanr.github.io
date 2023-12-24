@@ -1,6 +1,6 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import { enNavbar, zhNavbar } from "./navbar/index.js";
-import { enSidebar, zhSidebar } from "./sidebar/index.js";
+import navbar from "./navbar.js";
+import sidebar from "./sidebar.js";
 
 export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
@@ -18,49 +18,25 @@ export default hopeTheme({
 
   docsDir: "src",
 
-  locales: {
-    "/": {
-      // navbar
-      navbar: enNavbar,
+  // navbar
+  navbar,
 
-      // sidebar
-      sidebar: enSidebar,
+  // sidebar
+  sidebar,
 
-      footer: "Default footer",
+  footer: "默认页脚",
 
-      displayFooter: true,
-
-      metaLocales: {
-        editLink: "Edit this page on GitHub",
-      },
-    },
-
-    /**
-     * Chinese locale config
-     */
-    "/zh/": {
-      // navbar
-      navbar: zhNavbar,
-
-      // sidebar
-      sidebar: zhSidebar,
-
-      footer: "默认页脚",
-
-      displayFooter: true,
-
-      // page meta
-      metaLocales: {
-        editLink: "在 GitHub 上编辑此页",
-      },
-    },
-  },
+  displayFooter: true,
 
   encrypt: {
     config: {
       "/demo/encrypt.html": ["1234"],
-      "/zh/demo/encrypt.html": ["1234"],
     },
+  },
+
+  // page meta
+  metaLocales: {
+    editLink: "在 GitHub 上编辑此页",
   },
 
   plugins: {
