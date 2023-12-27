@@ -20,7 +20,7 @@ export default defineUserConfig({
       var _hmt = _hmt || [];
       (function() {
         var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?f3b3102ebd032b085c6e0550c0e02f74";
+        hm.src = "https://hm.baidu.com/hm.js?88a4cc00466ed591242206edc661a417";
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
       })();
