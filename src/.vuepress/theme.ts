@@ -1,20 +1,26 @@
-import { hopeTheme } from "vuepress-theme-hope";
-import navbar from "./navbar.js";
-import sidebar from "./sidebar.js";
+import { hopeTheme } from "vuepress-theme-hope"
+import navbar from "./navbar.js"
+import sidebar from "./sidebar.js"
 
 export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "ZEQUANR",
+    url: "https://github.com/ZEQUANR",
   },
 
-  iconAssets: "fontawesome-with-brands",
+  iconAssets: "iconify",
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "logo.svg",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  navbarLayout: {
+    start: ["Brand", "Search"],
+    center: [],
+    end: ["Links", "Repo", "Outlook"],
+  },
+
+  repo: "ZEQUANR",
 
   docsDir: "src",
 
@@ -40,6 +46,7 @@ export default hopeTheme({
   },
 
   plugins: {
+    blog: true,
     // You should generate and use your own comment service
     comment: {
       provider: "Giscus",
@@ -70,7 +77,7 @@ export default hopeTheme({
                 tag: "Badge",
                 attrs: { type: "tip" },
                 content: "Recommended",
-              };
+              }
           },
         },
       ],
@@ -172,4 +179,4 @@ export default hopeTheme({
     //   },
     // },
   },
-});
+},{ custom: true })

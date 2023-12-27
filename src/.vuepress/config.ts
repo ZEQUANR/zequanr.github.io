@@ -1,15 +1,22 @@
-import { defineUserConfig } from "vuepress";
-import theme from "./theme.js";
+import { defineUserConfig } from "vuepress"
+import { getDirname, path } from "@vuepress/utils";
+import theme from "./theme.js"
+
+const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
   base: "/",
 
   lang: "zh-CN",
-  title: "文档演示",
-  description: "vuepress-theme-hope 的文档演示",
+  title: "ZEQUANR",
+  description: "ZEQUANR 的个人博客",
 
   theme,
 
-  // Enable it with pwa
-  // shouldPrefetch: false,
+  alias: {
+    "@theme-hope/components/HomePage": path.resolve(
+      __dirname,
+      "./components/HomePage.vue"
+    ),
+  },
 });

@@ -1,0 +1,63 @@
+@use "@sass-palette/hope-config";
+
+@mixin wrapper($pad: hope-config.$pad, $mobile: hope-config.$mobile) {
+  max-width: var(--content-width, 740px);
+  margin: 0 auto;
+  padding: 2rem 2.5rem;
+
+  @media (max-width: $pad) {
+    padding: 1.5rem;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 1rem 1.5rem;
+  }
+
+  @media print {
+    max-width: unset;
+  }
+}
+
+@mixin horizontal-wrapper($pad: hope-config.$pad) {
+  max-width: var(--content-width, 740px);
+  margin-inline: auto;
+  padding-inline: 2.5rem;
+
+  @media (max-width: $pad) {
+    padding-inline: 1.5rem;
+  }
+
+  @media print {
+    max-width: unset;
+  }
+}
+
+
+.vp-project-home {
+  --content-width: var(--home-page-width);
+  display: block;
+  flex: 1;
+  padding-top: var(--navbar-height);
+
+  .vp-hero-info-wrapper:not(.fullscreen) {
+    .vp-hero-info {
+      @media screen {
+        max-width: var(--home-page-width);
+      }
+    }
+  }
+
+  .vp-feature {
+    @media screen {
+      max-width: var(--home-page-width);
+    }
+  }
+
+  .theme-hope-content {
+    padding-bottom: 1.5rem !important;
+
+    &:empty {
+      padding: 0 !important;
+    }
+  }
+}
