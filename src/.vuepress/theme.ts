@@ -3,7 +3,7 @@ import navbar from "./navbar.js"
 import sidebar from "./sidebar.js"
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+  hostname: "https://zequanr.github.io",
 
   author: {
     name: "ZEQUANR",
@@ -14,47 +14,55 @@ export default hopeTheme({
 
   logo: "logo.svg",
 
-  navbarLayout: {
-    start: ["Brand", "Search"],
-    center: [],
-    end: ["Links", "Repo", "Outlook"],
-  },
-
+  // 仓库配置，用于在导航栏中显示仓库链接。
   repo: "ZEQUANR",
 
+  // 文档在仓库中的目录
   docsDir: "src",
 
-  // navbar
+  // 是否显示编辑链接（每个页面生成的编辑此页链接）
+  editLink: false,
+
+  // 导航栏组件位置
+  navbarLayout: {
+    start: ["Brand"],
+    center: [],
+    end: ["Links", "Repo", "Outlook", "Search"],
+  },
+
+  // 导航栏配置
   navbar,
 
-  // sidebar
+  // 侧边栏配置
   sidebar,
 
+  // 设置页脚内容-类型: boolean | string | HTMLString
   footer: "默认页脚",
 
   displayFooter: true,
 
-  encrypt: {
-    config: {
-      "/demo/encrypt.html": ["1234"],
-    },
-  },
+  // encrypt: {
+  //   config: {
+  //     "/demo/encrypt.html": ["1234"],
+  //   },
+  // },
 
-  // page meta
+  // 页面元数据
   metaLocales: {
+    // editLink 为 false 时不显示
     editLink: "在 GitHub 上编辑此页",
   },
 
   plugins: {
     blog: true,
     // You should generate and use your own comment service
-    comment: {
-      provider: "Giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
-      category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
-    },
+    // comment: {
+    //   provider: "Giscus",
+    //   repo: "vuepress-theme-hope/giscus-discussions",
+    //   repoId: "R_kgDOG_Pt2A",
+    //   category: "Announcements",
+    //   categoryId: "DIC_kwDOG_Pt2M4COD69",
+    // },
 
     // All features are enabled for demo, only preserve features you need here
     mdEnhance: {
