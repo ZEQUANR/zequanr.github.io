@@ -144,7 +144,6 @@ const cardFlip = (card) => {
   background: #fffa62; /* - */
   padding: 16px;
   border-radius: 10px;
-  box-shadow: 14px 14px 0 0 #000000;
 
   .card {
     height: 75px;

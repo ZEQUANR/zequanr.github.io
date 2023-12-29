@@ -7,7 +7,7 @@ import HighlightPanel from "@theme-hope/components/HighlightPanel"
 import MarkdownContent from "@theme-hope/components/MarkdownContent"
 import DropTransition from "@theme-hope/components/transitions/DropTransition"
 import HeroInfo from "./HeroInfo"
-import Test from "./test.vue"
+// import Test from "./test.vue"
 import "./home-page.scss"
 export default defineComponent({
   name: "HomePage",
@@ -47,7 +47,7 @@ export default defineComponent({
                 )
               : null),
           slots.center?.(),
-          h(Test),
+          //   h(Test),
           h(
             DropTransition,
             {
