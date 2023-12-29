@@ -5,10 +5,10 @@ title: 主页
 heroImage: /logo.svg
 heroFullScreen: true
 heroText: ZEQUANR
-bgImage: /assets/background/1330226.jpg
-bgImageDark: /assets/background/1328086.png
+bgImage: /assets/background/main-picture.svg
+bgImageDark: /assets/background/main-picture-dark.svg
 bgImageStyle:
-  opacity: 0.5
+  opacity: 0.85
   background-position: 50% 60%
 tagline: 欢迎来到 ZEQUANR 的博客
 
@@ -24,22 +24,23 @@ highlights:
     features:
       - title: GitHub
         icon: devicon:github
-        details: 检查 Markdown 链接
+        details: 开源与工作
         link: https://github.com/ZEQUANR
 
       - title: 语雀
         icon: ri:yuque-fill
-        details: 检查 Markdown 链接
+        details: 数字花园
         link: https://www.yuque.com/zequanr
       
       - title: Observable
         icon: simple-icons:observable
-        details: 检查 Markdown 链接
-        link: https://theme-hope.vuejs.press/zh/guide/markdown/others.html#link-check
+        details: js 创作集
+        link: https://observablehq.com/@zequanr
       
       - title: Mail
         icon: twemoji:e-mail
         details: ZEQUANR@88.com
+        link: https://www.88.com
 
   - header: 易于安装
     image: /assets/image/box.svg
@@ -72,7 +73,35 @@ highlights:
         details: 将最终生成的网页针对搜索引擎进行优化。
         link: https://theme-hope.vuejs.press/zh/guide/advanced/seo.html
 
+  - header: 测试数据
+    description: 我们扩展了标准的 CommonMark 规范，为你添加了成吨功能。
+    image: /logo.svg
+    bgImage: https://theme-hope-assets.vuejs.press/bg/2-light.svg
+    bgImageDark: https://theme-hope-assets.vuejs.press/bg/2-dark.svg
+    bgImageStyle:
+      background-repeat: repeat
+      background-size: initial
+    features:
+      - title: GitHub
+        icon: devicon:github
+        details: 开源与工作
+        link: https://github.com/ZEQUANR
+
+      - title: 语雀
+        icon: ri:yuque-fill
+        details: 数字花园
+        link: https://www.yuque.com/zequanr
+      
+      - title: Observable
+        icon: simple-icons:observable
+        details: js 创作集
+        link: https://observablehq.com/@zequanr
+      
+      - title: Mail
+        icon: twemoji:e-mail
+        details: ZEQUANR@88.com
+        link: https://www.88.com
+
 copyright: Copyright © 2023 <a href="https://github.com/ZEQUANR" target="_blank">ZEQUANR
 footer: 友情链接：<a href="https://shplume.github.io"> Shplume </a> 、 <a href="https://zhangbokai614.github.io/" target="_blank">Transistor </a>
 ---
-
