@@ -24,7 +24,7 @@ export default defineComponent({
       return null
     })
     
-    window.console.log(highlights.value)
+    // window.console.log(highlights.value)
     return () =>
       h(
         "main",
