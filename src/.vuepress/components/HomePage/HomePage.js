@@ -3,11 +3,10 @@ import { isArray } from "@vuepress/shared"
 import { computed, defineComponent, h } from "vue"
 import { usePure } from "@theme-hope/composables/index"
 import FeaturePanel from "@theme-hope/components/FeaturePanel"
-import HighlightPanel from "@theme-hope/components/HighlightPanel"
 import MarkdownContent from "@theme-hope/components/MarkdownContent"
 import DropTransition from "@theme-hope/components/transitions/DropTransition"
+import HighlightPanel from "./HighlightPanel"
 import HeroInfo from "./HeroInfo"
-// import Test from "./test.vue"
 import "./home-page.scss"
 export default defineComponent({
   name: "HomePage",
@@ -24,6 +23,8 @@ export default defineComponent({
       if (isArray(highlights)) return highlights
       return null
     })
+    
+    window.console.log(highlights.value)
     return () =>
       h(
         "main",
@@ -47,7 +48,6 @@ export default defineComponent({
                 )
               : null),
           slots.center?.(),
-          //   h(Test),
           h(
             DropTransition,
             {
