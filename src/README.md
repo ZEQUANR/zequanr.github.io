@@ -5,8 +5,8 @@ title: 主页
 heroImage: /logo.svg
 heroFullScreen: true
 heroText: ZEQUANR
-bgImage: /assets/background/main/main-picture.svg
-bgImageDark: /assets/background/main/main-picture-dark.svg
+bgImage: /assets/background/main/main.jpg
+bgImageDark: /assets/background/main/main.jpg
 bgImageStyle:
   opacity: 0.85
   background-position: 50% 60%
@@ -31,12 +31,12 @@ highlights:
         icon: ri:yuque-fill
         details: 数字花园
         link: https://www.yuque.com/zequanr
-      
+
       - title: Observable
         icon: simple-icons:observable
         details: js 创作集
         link: https://observablehq.com/@zequanr
-      
+
       - title: Mail
         icon: twemoji:e-mail
         details: ZEQUANR@88.com
@@ -102,12 +102,12 @@ highlights:
   #       icon: ri:yuque-fill
   #       details: 数字花园
   #       link: https://www.yuque.com/zequanr
-      
+
   #     - title: Observable
   #       icon: simple-icons:observable
   #       details: js 创作集
   #       link: https://observablehq.com/@zequanr
-      
+
   #     - title: Mail
   #       icon: twemoji:e-mail
   #       details: ZEQUANR@88.com
