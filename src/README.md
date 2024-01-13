@@ -42,7 +42,7 @@ highlights:
         details: ZEQUANR@88.com
         link: https://www.88.com
 
-  - header: javascript
+  - header: JavaScript
     image: /assets/image/box.svg
     bgImage: /assets/background/javascript/light.svg
     bgImageDark: /assets/background/javascript/dark.svg
@@ -51,7 +51,7 @@ highlights:
     #     link: https://theme-hope.vuejs.press/zh/guide/blog/intro.html
     #   - title: 在已有项目根目录下运行 <code>pnpm create vuepress-theme-hope add .</code> 以在项目中添加主题。
 
-  - header: vue
+  - header: Vue
     # description: 增强站点与用户体验的高级功能
     image: /assets/image/advanced.svg
     bgImage: /assets/background/vue/light.svg
@@ -62,7 +62,7 @@ highlights:
     #     details: 将最终生成的网页针对搜索引擎进行优化。
     #     link: https://theme-hope.vuejs.press/zh/guide/advanced/seo.html
 
-  - header: react
+  - header: React
     # description: 增强站点与用户体验的高级功能
     image: /assets/image/advanced.svg
     bgImage: /assets/background/react/light.svg
