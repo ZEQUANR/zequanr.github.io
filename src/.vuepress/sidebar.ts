@@ -1,10 +1,16 @@
 import { sidebar } from "vuepress-theme-hope"
 
 export default sidebar({
+  "/": ["/"],
+
+  "/pages/about/": "structure",
+
   "/pages/javascript/": [
     "",
     {
-      prefix: "/pages/javascript/",
+      text: "指南",
+      icon: "lightbulb",
+      collapsible: true,
       children: [
         "Deep copy and front copy",
         "File Blob FileReader ArrayBuffer Base64",
@@ -12,16 +18,9 @@ export default sidebar({
     },
   ],
 
-  "/": [
-    "/pages/c/",
-    "/pages/go/",
-    "/pages/vue/",
-    "/pages/react/",
-    "/pages/python/",
-    "/pages/javascript/",
-    "/pages/database/",
-    "/pages/docker/",
-    "/pages/mysql/",
-    "/pages/mongodb/",
-  ],
+  "/pages/go/": "structure",
+
+  "/pages/c/": "structure",
+
+  "/pages/math/": "structure",
 })

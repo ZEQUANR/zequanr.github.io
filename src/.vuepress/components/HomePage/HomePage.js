@@ -23,8 +23,6 @@ export default defineComponent({
       if (isArray(highlights)) return highlights
       return null
     })
-    
-    // window.console.log(highlights.value)
     return () =>
       h(
         "main",

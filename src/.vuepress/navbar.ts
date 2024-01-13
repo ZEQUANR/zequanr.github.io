@@ -5,29 +5,28 @@ export default navbar([
   "/pages/about/",
   "/pages/javascript/",
   "/pages/go/",
+  "/pages/c/",
   "/pages/math/",
-  "/pages/timeline/",
+  {
+    text: "时间轴",
+    icon: "flat-color-icons:timeline",
+    link: "/timeline/",
+  },
   {
     text: "更多",
     icon: "icon-park:more-app",
     children: [
       {
         text: "编程语言",
-        children: [
-          "/pages/c/",
-          "/pages/go/",
-          "/pages/vue/",
-          "/pages/react/",
-          "/pages/python/",
-          "/pages/javascript/",
-        ],
+        children: ["/pages/c/", "/pages/go/", "/pages/javascript/"],
+      },
+      {
+        text: "前端框架",
+        children: ["/pages/vue/", "/pages/react/"],
       },
       {
         text: "数据库",
-        children: [
-          "/pages/mysql/",
-          "/pages/mongodb/",
-        ],
+        children: ["/pages/mysql/", "/pages/mongodb/"],
       },
       {
         text: "党史学习",
@@ -35,35 +34,10 @@ export default navbar([
           {
             text: "文章标题",
             icon: "fxemoji:chineseflag",
-            link: "/pages/vue/"
-          }
+            link: "/pages/history/",
+          },
         ],
       },
     ],
   },
-  // "/demo/",
-  // {
-  //   text: "指南",
-  //   icon: "lightbulb",
-  //   prefix: "/guide/",
-  //   children: [
-  //     {
-  //       text: "Bar",
-  //       icon: "lightbulb",
-  //       prefix: "bar/",
-  //       children: ["baz", { text: "...", icon: "ellipsis", link: "" }],
-  //     },
-  //     {
-  //       text: "Foo",
-  //       icon: "lightbulb",
-  //       prefix: "foo/",
-  //       children: ["ray", { text: "...", icon: "ellipsis", link: "" }],
-  //     },
-  //   ],
-  // },
-  // {
-  //   text: "V2 文档",
-  //   icon: "book",
-  //   link: "https://theme-hope.vuejs.press/zh/",
-  // },
 ])

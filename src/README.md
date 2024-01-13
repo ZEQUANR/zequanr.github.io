@@ -34,7 +34,7 @@ highlights:
 
       - title: Observable
         icon: simple-icons:observable
-        details: js 创作集
+        details: JS 创作集
         link: https://observablehq.com/@zequanr
 
       - title: Mail
