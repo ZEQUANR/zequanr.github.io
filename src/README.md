@@ -4,13 +4,32 @@ icon: flat-color-icons:home
 title: 主页
 heroImage: /logo.svg
 heroFullScreen: true
-heroText: ZEQUANR
+heroText: Welcome To Know Me!
 bgImage: /assets/background/main/main.jpg
 bgImageDark: /assets/background/main/main.jpg
 bgImageStyle:
   opacity: 0.85
   background-position: 50% 60%
-tagline: 欢迎来到 ZEQUANR 的博客
+tagline:
+  [
+    "欢迎来到 ZEQUANR 的个人博客！",
+    "我正在努力学习，变得更好！",
+    "也希望能够得到大家的鼓励，谢谢！",
+  ]
+slogan: 越努力，越幸运！！！Lucky!
+
+actions:
+  - icon: mdi:github
+    link: https://github.com/ZEQUANR
+    type: primary
+
+  - icon: ri:yuque-line
+    link: https://www.yuque.com/zequanr
+    type: primary
+
+  - icon: simple-icons:observable
+    link: https://observablehq.com/@zequanr
+    type: primary
 
 highlights:
   - header: 𝓩𝓔𝓠𝓤𝓐𝓝
@@ -42,15 +61,14 @@ highlights:
         details: ZEQUANR@88.com
         link: https://www.88.com
 
-  - header: JavaScript
-    image: /assets/image/box.svg
-    bgImage: /assets/background/javascript/light.svg
-    bgImageDark: /assets/background/javascript/dark.svg
-    # highlights:
-    #   - title: 运行 <code>pnpm create vuepress-theme-hope hope-project</code> 以创建一个新的主题项目。
-    #     link: https://theme-hope.vuejs.press/zh/guide/blog/intro.html
-    #   - title: 在已有项目根目录下运行 <code>pnpm create vuepress-theme-hope add .</code> 以在项目中添加主题。
-
+  # - header: JavaScript
+  #   image: /assets/image/box.svg
+  #   bgImage: /assets/background/javascript/light.svg
+  #   bgImageDark: /assets/background/javascript/dark.svg
+  # highlights:
+  #   - title: 运行 <code>pnpm create vuepress-theme-hope hope-project</code> 以创建一个新的主题项目。
+  #     link: https://theme-hope.vuejs.press/zh/guide/blog/intro.html
+  #   - title: 在已有项目根目录下运行 <code>pnpm create vuepress-theme-hope add .</code> 以在项目中添加主题。
   - header: Vue
     # description: 增强站点与用户体验的高级功能
     image: /assets/image/advanced.svg

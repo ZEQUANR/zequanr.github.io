@@ -35,6 +35,21 @@
   }
 }
 
+/* 定义图片浮动的动画 */
+@keyframes floatImg {
+  0% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(-36px);
+  }
+
+  100% {
+      transform: translateY(0);
+  }
+}
+
 .vp-hero {
   &-info-wrapper {
     position: relative;
@@ -47,7 +62,7 @@
 
     &.fullscreen {
       height: calc(100vh - var(--navbar-height)) !important;
-      
+
       .slide-down-button {
         display: block;
       }
@@ -116,6 +131,12 @@
     max-height: 18rem;
     margin: 1rem;
 
+    padding: 0.5rem;
+    border-radius: 50%;
+    // animation: floatImg 4s ease-in-out infinite;
+    // box-shadow: 0 0 20px #b7b2a9;
+    // background: rgb(0, 0, 0, 0.7);
+
     @media (max-width: hope-config.$pad) {
       margin: 2rem auto;
     }
@@ -180,7 +201,8 @@
 }
 
 #main-title {
-  margin: 0.5rem 0;
+  // margin: 0.5rem 0;
+  margin: 0;
 
   background: linear-gradient(
     120deg,
@@ -200,7 +222,7 @@
   font-weight: bold;
   font-size: 3.6rem;
   font-family: var(--font-family);
-  line-height: 1.5;
+  // line-height: 1.5;
 
   -webkit-text-fill-color: transparent;
 
@@ -224,8 +246,45 @@
   }
 }
 
-#main-description,
-.vp-hero-actions {
+/* 光标闪烁动画 */
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+    /* 透明边框颜色 */
+  }
+  50% {
+    border-color: white;
+    /* 白色边框颜色 */
+  }
+}
+
+#main-description {
+  // margin: 1.8rem 0;
+  margin: 0;
+  width: fit-content;
+
+  @media (max-width: hope-config.$tablet) {
+    // margin: 1.5rem 0;
+    margin: 0;
+    width: fit-content;
+  }
+
+  @media (max-width: hope-config.$pad) {
+    // margin: 1.5rem auto;
+    margin: 0;
+    text-align: center;
+    width: fit-content;
+  }
+
+  @media (max-width: hope-config.$mobile) {
+    // margin: 1.2rem 0;
+    margin: 0;
+    width: fit-content;
+  }
+}
+
+#main-slogan {
   margin: 1.8rem 0;
 
   @media (max-width: hope-config.$tablet) {
@@ -242,10 +301,44 @@
   }
 }
 
+.vp-hero-actions {
+  margin-top: 1.8rem;
+  margin-bottom: 0;
+  // margin: 0;
+  // width: fit-content;
+
+  @media (max-width: hope-config.$tablet) {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    // margin: 0;
+    // width: fit-content;
+  }
+
+  @media (max-width: hope-config.$pad) {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    // margin: 0;
+    text-align: center;
+    // width: fit-content;
+  }
+
+  @media (max-width: hope-config.$mobile) {
+    margin-top: 1.2rem;
+    margin-bottom: 0;
+    // margin: 0;
+    // width: fit-content;
+  }
+}
+
 #main-description {
   max-width: 35rem;
 
   color: var(--text-color-light);
+
+  /* 添加光标效果 */
+  border-right: 2px solid white;
+  /* 添加光标闪烁效果 */
+  animation: blink 0.5s step-end infinite;
 
   font-weight: 500;
   font-size: 1.6rem;
@@ -260,20 +353,40 @@
   }
 }
 
+#main-slogan {
+  max-width: 35rem;
+
+  color: var(--text-color-light);
+
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.3;
+
+  @media (max-width: hope-config.$tablet) {
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: hope-config.$mobile) {
+    font-size: 0.6rem;
+  }
+}
+
 .vp-hero-action {
-  display: inline-block;
+  // display: inline-block;
 
   overflow: hidden;
 
-  min-width: 4rem;
-  margin: 0.5rem;
-  padding: 0.5em 1.5rem;
-  border-radius: 2rem;
+  // min-width: 4rem;
+  margin-right: 0.8rem;
+  // padding: 0.5em 1.5rem;
+  padding: 4px 6px;
+  // border-radius: 2rem;
+  border-radius: 4px;
 
   background: var(--bg-color-secondary);
   color: var(--text-color);
 
-  font-size: 1.2rem;
+  font-size: 2rem;
   text-align: center;
 
   transition:
@@ -315,7 +428,7 @@
     transform: scale(0.96);
   }
 
-  .icon {
-    margin-inline-end: 0.25em;
-  }
+  // .icon {
+  //   margin-inline-end: 0.25em;
+  // }
 }

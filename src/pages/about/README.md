@@ -1,6 +1,7 @@
 ---
 title: 关于我
 icon: flat-color-icons:about
+article: false
 ---
 
 ## <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"> Hi there, I'm ZEQUANR
@@ -9,7 +10,7 @@ icon: flat-color-icons:about
 I'm trying to learn more and become better
 </pre>
 
-<img src="https://pa1.narvii.com/6580/8098c6e9207376889eeb0532d9f5a0723c4d73f5_hq.gif" width="260" align="right" alt="">
+<img src="./image/cat_on_the_keyboard.gif" width="260" align="right" alt="">
 
 ### My current status:
 

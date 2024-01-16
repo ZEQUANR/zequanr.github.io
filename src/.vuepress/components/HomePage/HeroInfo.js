@@ -1,4 +1,12 @@
-import { computed, defineComponent, shallowRef, h } from "vue"
+import {
+  h,
+  ref,
+  computed,
+  onMounted,
+  shallowRef,
+  onUnmounted,
+  defineComponent,
+} from "vue"
 import {
   usePageFrontmatter,
   useSiteLocaleData,
@@ -31,11 +39,12 @@ export default defineComponent({
       () => frontmatter.value.heroFullScreen ?? false
     )
     const heroInfo = computed(() => {
-      const { heroText, tagline } = frontmatter.value
+      const { heroText, tagline, slogan } = frontmatter.value
       return {
         text: heroText ?? siteLocale.value.title ?? "Hello",
         tagline: tagline ?? siteLocale.value.description ?? "",
         isFullScreen: isFullScreen.value,
+        sloganText: slogan ?? "",
       }
     })
     const heroImage = computed(() => {
@@ -59,6 +68,54 @@ export default defineComponent({
       }
     })
     const actions = computed(() => frontmatter.value.actions ?? [])
+
+    const taglineText = ref({
+      idx: 0,
+      count: 0,
+      kartun: 0,
+      reversal: false,
+      text: "👀",
+    })
+    const writeTextMain = () => {
+      const content = heroInfo.value.tagline[taglineText.value.idx]
+
+      if (taglineText.value.reversal) {
+        if (!(taglineText.value.kartun >= 10)) {
+          taglineText.value.kartun += 1
+          return
+        }
+        if (taglineText.value.count < 0) {
+          taglineText.value.reversal = !taglineText.value.reversal
+          taglineText.value.kartun = 0
+        } else {
+          taglineText.value.text =
+            "👀" + content.substr(0, taglineText.value.count)
+          taglineText.value.count -= 1
+        }
+      } else {
+        if (taglineText.value.count >= content.length) {
+          taglineText.value.reversal = !taglineText.value.reversal
+        } else {
+          if (taglineText.value.count < 0) {
+            taglineText.value.count += 1
+            taglineText.value.idx += 1
+            if (taglineText.value.idx >= heroInfo.value.tagline.length) {
+              taglineText.value.idx = 0
+            }
+            return
+          }
+          taglineText.value.text += content[taglineText.value.count]
+          taglineText.value.count += 1
+        }
+      }
+    }
+
+    let intervalId
+    onMounted(() => {
+      intervalId = setInterval(writeTextMain, 300)
+    })
+
+    onUnmounted(() => clearInterval(intervalId))
     return () =>
       h(
         "header",
@@ -125,7 +182,15 @@ export default defineComponent({
                   ? h(DropTransition, { appear: true, delay: 0.08 }, () =>
                       h("p", {
                         id: "main-description",
-                        innerHTML: heroInfo.value.tagline,
+                        innerHTML: taglineText.value.text,
+                      })
+                    )
+                  : null,
+                heroInfo.value.sloganText
+                  ? h(DropTransition, { appear: true, delay: 0.08 }, () =>
+                      h("p", {
+                        id: "main-slogan",
+                        innerHTML: heroInfo.value.sloganText,
                       })
                     )
                   : null,
