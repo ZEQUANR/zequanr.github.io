@@ -13,6 +13,8 @@ export default hopeTheme(
 
     iconAssets: "iconify",
 
+    darkmode: "disable",
+
     logo: "logo.svg",
 
     // 仓库配置，用于在导航栏中显示仓库链接。
@@ -28,7 +30,7 @@ export default hopeTheme(
     navbarLayout: {
       start: ["Brand"],
       center: [],
-      end: ["Links", "Repo", "Outlook", "Search"],
+      end: ["Search", "Links", "Repo"],
     },
 
     // 导航栏配置
@@ -38,7 +40,7 @@ export default hopeTheme(
     sidebar,
 
     // 设置页脚内容-类型: boolean | string | HTMLString
-    footer: "默认页脚",
+    footer: "让我们建设一个更美好的世界",
 
     displayFooter: true,
 
