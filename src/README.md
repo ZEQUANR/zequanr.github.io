@@ -19,6 +19,9 @@ tagline:
 slogan: 现在学习都是为了将来!
 
 actions:
+  - icon: mdi:email
+    link: mailto:ZEQUANR@88.com
+
   - icon: mdi:github
     link: https://github.com/ZEQUANR
 
@@ -28,11 +31,11 @@ actions:
   - icon: simple-icons:wechat
     link: https://www.yuque.com/zequanr/gtgmxl/zbd0feqfy2vkqpkv?singleDoc#
 
-  - icon: simple-icons:observable
-    link: https://observablehq.com/@zequanr
+  # - icon: simple-icons:observable
+  #   link: https://observablehq.com/@zequanr
 
-  - icon: simple-icons:codepen
-    link: https://codepen.io/zequanr
+  # - icon: simple-icons:codepen
+  #   link: https://codepen.io/zequanr
 
 highlights:
   - header: 𝓩𝓔𝓠𝓤𝓐𝓝

@@ -1,12 +1,23 @@
 // place your custom styles here
 
 .vp-navbar {
-    background: rgba(255, 255, 255, 0.5)
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .vp-hero-info-wrapper.fullscreen {
     height: 100vh !important;
     margin-top: -3.75rem;
+}
+
+.search-pro-key-hints,
+.search-pro-placeholder {
+    display: none;
+}
+
+button.search-pro-button {
+    padding: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.65);
 }
 
 :root {
