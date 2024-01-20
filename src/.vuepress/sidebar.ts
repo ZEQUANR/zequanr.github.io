@@ -3,24 +3,147 @@ import { sidebar } from "vuepress-theme-hope"
 export default sidebar({
   "/": ["/"],
 
-  "/pages/about/": "structure",
+  "/About/": "structure",
 
-  "/pages/javascript/": [
+  "/FrontEnd/": [
     "",
     {
-      text: "指南",
-      icon: "lightbulb",
-      collapsible: true,
+      text: "JavaScript",
+      icon: "devicon:javascript",
+      // collapsible: true,
+      link: "/FrontEnd/JavaScript/",
       children: [
-        "Deep copy and front copy",
-        "File Blob FileReader ArrayBuffer Base64",
+        {
+          text: "基础知识",
+          // icon: "openmoji:brick",
+          icon: "openmoji:drip-coffee-maker",
+          collapsible: true,
+          prefix: "/FrontEnd/JavaScript/Basic/",
+          children: [
+            "Deep copy and front copy",
+            "File Blob FileReader ArrayBuffer Base64",
+            "Closure",
+          ],
+        },
+        {
+          text: "DOM 操作与 BOM 接口",
+          icon: "icon-park:network-tree",
+          collapsible: true,
+          children: [],
+        },
+        {
+          text: "ES6+ 新特性",
+          icon: "noto-v1:keycap-6",
+          collapsible: true,
+          children: [],
+        },
+        {
+          text: "异步编程",
+          // icon: "bitcoin-icons:channels-filled",
+          icon: "bitcoin-icons:channels-outline",
+          collapsible: true,
+          children: [],
+        },
+        {
+          text: "设计模式",
+          icon: "icon-park:graphic-design",
+          collapsible: true,
+          children: [],
+        },
+        {
+          text: "Web API 接口",
+          icon: "icon-park:database-network-point",
+          collapsible: true,
+          children: [],
+        },
+        {
+          text: "面向对象编程",
+          icon: "icon-park:elephant",
+          collapsible: true,
+          children: [],
+        },
+        {
+          text: "Demo",
+          icon: "openmoji:chestnut",
+          link: "/FrontEnd/JavaScript/Demo/",
+        },
       ],
+    },
+    {
+      text: "浏览器",
+      icon: "icon-park:browser-safari",
+      collapsible: true,
+      children: [],
+    },
+    {
+      text: "工程化",
+      icon: "icon-park:projector-two",
+      collapsible: true,
+      children: [],
+    },
+    {
+      text: "性能优化",
+      icon: "icon-park:lightning",
+      collapsible: true,
+      children: [],
+    },
+    {
+      text: "部署",
+      icon: "noto:building-construction",
+      collapsible: true,
+      children: [],
+    },
+    {
+      text: "HTML",
+      icon: "devicon:html5",
+      collapsible: true,
+      children: [],
+    },
+    {
+      text: "CSS",
+      icon: "devicon:css3",
+      collapsible: true,
+      children: [],
+    },
+    {
+      text: "Vue",
+      icon: "devicon:vuejs",
+      collapsible: true,
+      children: [],
+    },
+    {
+      text: "React",
+      icon: "devicon:react",
+      collapsible: true,
+      children: [],
     },
   ],
 
-  "/pages/go/": "structure",
+  "/Go/": "structure",
 
-  "/pages/c/": "structure",
+  "/C/": "structure",
 
-  "/pages/math/": "structure",
+  "/Math/": "structure",
+
+  "/Atlas/": "structure",
+
+  "/Tool/": "structure",
+
+  "/Memory/": "structure",
+
+  "/Database/": [
+    "",
+    {
+      text: "MySql",
+      icon: "logos:mysql",
+      collapsible: true,
+      children: [],
+    },
+    {
+      text: "MongoDB",
+      icon: "skill-icons:mongodb",
+      collapsible: true,
+      children: [],
+    },
+  ],
 })
