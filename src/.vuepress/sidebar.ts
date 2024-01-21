@@ -128,7 +128,8 @@ export default sidebar({
       // icon: "openmoji:brick",
       icon: "openmoji:drip-coffee-maker",
       // collapsible: true,
-      children: [],
+      prefix: "/C/LanguageFoundation",
+      children: ["MainFunction"],
     },
     {
       text: "数据结构",
@@ -147,7 +148,8 @@ export default sidebar({
       text: "标准库",
       icon: "ion:file-tray",
       collapsible: true,
-      children: [],
+      prefix: "/C/StandardLibrary",
+      children: ["stdio.h"],
     },
   ],
 
