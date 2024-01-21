@@ -2,15 +2,31 @@ import { navbar } from "vuepress-theme-hope"
 
 export default navbar([
   "/",
-  "/About/",
+  {
+    text: "关于我",
+    icon: "flat-color-icons:about",
+    link: "/About/",
+  },
   {
     text: "JavaScript",
     icon: "devicon:javascript",
     link: "/FrontEnd/JavaScript/",
   },
-  "/Go/",
-  "/C/",
-  "/Math/",
+  {
+    text: "Go",
+    icon: "skill-icons:golang",
+    link: "/Go/",
+  },
+  {
+    text: "C",
+    icon: "devicon:c",
+    link: "/C/",
+  },
+  {
+    text: "Math",
+    icon: "ooui:mathematics",
+    link: "/Math/",
+  },
   {
     text: "时间轴",
     icon: "flat-color-icons:timeline",
@@ -23,8 +39,16 @@ export default navbar([
       {
         text: "编程语言",
         children: [
-          "/C/",
-          "/Go/",
+          {
+            text: "C",
+            icon: "devicon:c",
+            link: "/C/",
+          },
+          {
+            text: "Go",
+            icon: "skill-icons:golang",
+            link: "/Go/",
+          },
           {
             text: "JavaScript",
             icon: "devicon:javascript",

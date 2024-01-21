@@ -121,7 +121,35 @@ export default sidebar({
 
   "/Go/": "structure",
 
-  "/C/": "structure",
+  "/C/": [
+    "",
+    {
+      text: "语言基础",
+      // icon: "openmoji:brick",
+      icon: "openmoji:drip-coffee-maker",
+      // collapsible: true,
+      children: [],
+    },
+    {
+      text: "数据结构",
+      icon: "streamline:industry-innovation-and-infrastructure",
+      // collapsible: true,
+      prefix: "/C/DataStructure/",
+      children: ["Array", "LinkedList", "Stack", "Queue", "BinaryTree"],
+    },
+    {
+      text: "算法训练",
+      icon: "icon-park:arithmetic-one",
+      // collapsible: true,
+      children: [],
+    },
+    {
+      text: "标准库",
+      icon: "ion:file-tray",
+      collapsible: true,
+      children: [],
+    },
+  ],
 
   "/Math/": "structure",
 
