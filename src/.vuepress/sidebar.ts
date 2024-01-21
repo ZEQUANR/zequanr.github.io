@@ -125,11 +125,10 @@ export default sidebar({
     "",
     {
       text: "语言基础",
-      // icon: "openmoji:brick",
       icon: "openmoji:drip-coffee-maker",
       // collapsible: true,
       prefix: "/C/LanguageFoundation",
-      children: ["MainFunction"],
+      children: ["MainFunction", "BasicSyntax", "Variable"],
     },
     {
       text: "数据结构",
