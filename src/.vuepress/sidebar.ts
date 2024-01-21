@@ -142,7 +142,8 @@ export default sidebar({
       text: "算法训练",
       icon: "icon-park:arithmetic-one",
       // collapsible: true,
-      children: [],
+      prefix: "/C/AlgorithmTraining/",
+      children: ["BinarySearch", "Hanoi", "PrimeNumber"],
     },
     {
       text: "标准库",
