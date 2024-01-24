@@ -4,21 +4,21 @@ icon: flat-color-icons:about
 article: false
 ---
 
-## <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"> Hi there, I'm ZEQUANR
+## <img src="./image/wave.gif" width="30px"> 大家好，我是 ZEQUANR
 
 <pre>
-I'm trying to learn more and become better
+我正在努力学习更多的知识，希望可以变得更好！
 </pre>
 
 <img src="./image/cat_on_the_keyboard.gif" width="260" align="right" alt="">
 
-### My current status:
+### 我的现状:
 
-- 🔭 I’m currently working on <strong>Full-Stack Web Development</strong>
-- 📚 I’m currently learning <strong>Go</strong>
-- 🥅 2024 Goals: I’m looking to collaborate on opensource and group projects and Learn a lot.
+- 🔭 我目前从事<strong>前端开发</strong>
+- 📚 我现在正在学习 <strong>Go</strong>
+- 🥅 2024 年目标：我希望在开源和小组项目上进行合作，并学到很多东西。
 
-### Languages:
+### 语言:
 
 <p align="center">
   <a href="https://skillicons.dev">
@@ -26,7 +26,7 @@ I'm trying to learn more and become better
   </a>
 </p>
 
-### Frameworks and Tools:
+### 框架和工具:
 
 <p align="center">
   <a href="https://skillicons.dev">
@@ -34,7 +34,7 @@ I'm trying to learn more and become better
   </a>
 </p>
 
-### Github Overview:
+### Github:
 
 <a href="https://github.com/anuraghazra/github-readme-stats">
   <img height=225 align="center" src="https://github-readme-stats.vercel.app/api?username=ZEQUANR&count_private=true&theme=react&rank_icon=github" />
