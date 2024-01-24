@@ -1,5 +1,5 @@
 ---
-title: 素数
+title: 找素数
 icon: mdi:numbers
 # cover: /assets/images/database/database-2.webp
 author: 王泽权

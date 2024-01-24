@@ -10,7 +10,7 @@ export default sidebar({
     {
       text: "JavaScript",
       icon: "devicon:javascript",
-      // collapsible: true,
+      collapsible: true,
       link: "/FrontEnd/JavaScript/",
       children: [
         {
@@ -48,7 +48,33 @@ export default sidebar({
           text: "设计模式",
           icon: "icon-park:graphic-design",
           collapsible: true,
-          children: [],
+          // link: "/FrontEnd/JavaScript/DesignPattern/",
+          children: [
+            {
+              text: "创建型设计模式",
+              icon: "uil:create-dashboard",
+              collapsible: true,
+              // link: "/FrontEnd/JavaScript/DesignPattern/CreationalPatterns/",
+              prefix: "/FrontEnd/JavaScript/DesignPattern/CreationalPatterns",
+              children: ["ConstructorPattern", "PrototypePattern", "FactoryPattern", "AbstractFactoryPattern", "BuilderPattern", "SingletonPattern"],
+            },
+            {
+              text: "结构型设计模式",
+              icon: "simple-icons:instructure",
+              collapsible: true,
+              // link: "/FrontEnd/JavaScript/DesignPattern/StructuralPatterns/",
+              prefix: "/FrontEnd/JavaScript/DesignPattern/StructuralPatterns",
+              children: [],
+            },
+            {
+              text: "行为型设计模式",
+              icon: "fluent-mdl2:running",
+              collapsible: true,
+              // link: "/FrontEnd/JavaScript/DesignPattern/BehavioralPatterns/",
+              prefix: "/FrontEnd/JavaScript/DesignPattern/BehavioralPatterns",
+              children: [],
+            },
+          ],
         },
         {
           text: "Web API 接口",
@@ -68,6 +94,12 @@ export default sidebar({
           link: "/FrontEnd/JavaScript/Demo/",
         },
       ],
+    },
+    {
+      text: "TypeScript",
+      icon: "devicon:typescript",
+      collapsible: true,
+      children: [],
     },
     {
       text: "浏览器",
@@ -114,6 +146,12 @@ export default sidebar({
     {
       text: "React",
       icon: "devicon:react",
+      collapsible: true,
+      children: [],
+    },
+    {
+      text: "开源项目",
+      icon: "logos:opensource",
       collapsible: true,
       children: [],
     },
