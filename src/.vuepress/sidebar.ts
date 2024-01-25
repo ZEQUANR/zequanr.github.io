@@ -20,9 +20,10 @@ export default sidebar({
           collapsible: true,
           prefix: "/FrontEnd/JavaScript/Basic/",
           children: [
-            "Deep copy and front copy",
-            "File Blob FileReader ArrayBuffer Base64",
-            "Closure",
+            "Deep copy and front copy", // 深拷贝&浅拷贝
+            "File Blob FileReader ArrayBuffer Base64", // Blob 类型
+            "Closure", // 闭包
+            "This Refers To", // this 指向
           ],
         },
         {
@@ -157,7 +158,17 @@ export default sidebar({
     },
   ],
 
-  "/Go/": "structure",
+  "/Go/": [
+    "",
+    "Array",
+    "Slice",
+    "String",
+    "Channel",
+    "Sort",
+    "Ring",
+    "List",
+    "Heap",
+  ],
 
   "/C/": [
     "",
