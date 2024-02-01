@@ -27,6 +27,8 @@ function sayHello() {
 sayHello(); // 在浏览器环境下输出 window 对象
 ```
 
+<center>code - 1：在浏览器环境下输出 window 对象</center><br>
+
 方法调用： 当函数作为某个对象的方法被调用时，this 指向调用该方法的对象。
 
 ```javascript
@@ -39,8 +41,10 @@ const person = {
 person.greet();
 ```
 
+<center>code - 2：this 指向调用该方法的对象</center><br>
+
 ### 显式绑定
-call()、apply() 和 bind() 方法可以显式指定 this 的指向。
+通过 call()、apply() 和 bind() 方法可以显式指定 this 的指向。
 
 ```javascript
 function greet() {
@@ -50,6 +54,8 @@ function greet() {
 const person = { name: "John" };
 greet.call(person); // 输出 "John"
 ```
+
+<center>code - 3：显式指定 this 的指向</center><br>
 
 ## 高级应用场景
 ### 构造函数调用
@@ -63,6 +69,8 @@ function Person(name) {
 const john = new Person("John");
 console.log(john.name); // 输出 "John"
 ```
+
+<center>code - 4：this 指向新对象</center><br>
 
 ### 箭头函数
 箭头函数没有自己的 this 值，它继承了父级作用域（词法作用域）的 this 值。
@@ -81,6 +89,8 @@ person.sayNameLexical = function() {
 };
 ```
 
+<center>code - 5：箭头函数没有自己的 this 值</center><br>
+
 ## 事件处理函数中的 this
 在 DOM 事件处理函数中，this 通常指向触发事件的元素对象。
 
@@ -90,12 +100,12 @@ document.getElementById("myButton").addEventListener("click", function() {
 });
 ```
 
+<center>code - 6：事件处理函数中的 this</center><br>
+
 ## 总结
 | **调用方式** | **示例** | **函数中的 this 指向** |
 | --- | --- | --- |
-| 直接调用 | method() | 全局对象
-浏览器环境为 window 对象
-Node.js 环境为 global 对象 |
+| 直接调用 | method() | 全局对象 <br> 浏览器环境为 window 对象 <br> Node.js 环境为 global 对象 |
 | 通过对象方法调用 | obj.method() | 前面的对象 |
 | 通过call、apply、bind 调用 | method.call({}) | 第一个参数 |
 | 通过 new 构造函数调用 | new method() | 新创建的对象 |
