@@ -88,6 +88,17 @@ highlights:
         details: 以图配文，向孩子讲解编程的基础知识
         link: /C/
 
+  # - header: 数据可视化
+  #   description: 只要你为数字提供清晰、服众的展现方式，数字可以告诉我们很重要的信息。
+  #   image: /assets/icon/largeDataScreen-icon.png
+  #   bgImage: /assets/image/largeDataScreen-background.png
+  #   bgImageDark: /assets/image/largeDataScreen-background.png
+  #   highlights:
+  #     - title: 语言课堂笔记
+  #       icon: devicon:c
+  #       details: 以图配文，向孩子讲解编程的基础知识
+  #       link: /C/
+
   - header: 数学
     description: ✊ 坚持学习，让自己变的更好
     image: /assets/icon/math-icon.png
