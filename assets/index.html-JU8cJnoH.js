@@ -1,1 +1,0 @@
-import{_ as e,o as t,c,b as n}from"./app-a3Zgm-oK.js";const o={},_=n("p",null,"每当看到孩子们面对一串串代码时眼睛闪烁出好奇的光芒，我内心无比欣慰。他们用稚嫩的小手敲击键盘，就像农夫播撒种子，期待收获科技树上的累累硕果。编程学习过程中，孩子们不仅学会了如何操控计算机执行任务，更是在培养逻辑思维、问题解决能力和创新意识，这些品质将伴随他们一生，成为他们人生路上坚实的基石。",-1),s=[_];function r(a,l){return t(),c("div",null,s)}const i=e(o,[["render",r],["__file","index.html.vue"]]);export{i as default};
